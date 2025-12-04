@@ -29,7 +29,7 @@ export const CoordinatorSection = () => {
               {/* Container da foto */}
               <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-muted border border-border/50 shadow-card">
                 <img
-                  src="/src/assets/barbara.png"
+                  src="/images/barbara.png"
                   alt="Foto da Coordenadora Editorial"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

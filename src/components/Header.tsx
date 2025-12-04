@@ -43,7 +43,7 @@ export const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center">
             <img 
-              src="/src/assets/logo.png" 
+              src="/images/barbara.png" 
               alt="Logo AEA" 
               className="h-10 w-auto"
                                   />
