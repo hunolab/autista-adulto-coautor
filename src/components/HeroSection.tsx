@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Button } from '@/components/ui/button';
-import bookMockup from '@/assets/book-mockup.png';
+import bookMockup from '@/assets/book-mockup.png'; // <-- Caminho IDEAL
 
 export const HeroSection = () => {
   const heroRef = useRef<HTMLElement>(null);
@@ -17,7 +17,6 @@ export const HeroSection = () => {
       .fromTo('.hero-cta', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, '-=0.4')
       .fromTo('.hero-book', { x: 60, opacity: 0, rotate: 5 }, { x: 0, opacity: 1, rotate: 0, duration: 1 }, '-=0.8');
 
-    // Floating animation for book
     if (bookRef.current) {
       gsap.to(bookRef.current, {
         y: -15,
@@ -41,12 +40,15 @@ export const HeroSection = () => {
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
-      
+
       {/* Subtle pattern */}
-      <div className="absolute inset-0 opacity-[0.02]" style={{
-        backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)`,
-        backgroundSize: '40px 40px'
-      }} />
+      <div
+        className="absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)`,
+          backgroundSize: '40px 40px',
+        }}
+      />
 
       <div className="container mx-auto px-6 lg:px-12 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -56,38 +58,36 @@ export const HeroSection = () => {
               <span className="hero-subtitle inline-block text-sm font-semibold tracking-widest uppercase text-secondary">
                 Chamada para coautores
               </span>
+
               <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-foreground">
-                Adultos no{' '}
-                <span className="text-gradient-primary">Espectro Autista</span>
+                Adultos no <span className="text-gradient-primary">Espectro Autista</span>
               </h1>
+
               <p className="hero-subtitle text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-                Sua história pode transformar vidas. Participe como coautor(a) desta obra única e ajude a construir uma nova narrativa sobre o autismo adulto.
+                Sua história pode transformar vidas. Participe como coautor(a) desta obra única e
+                ajude a construir uma nova narrativa sobre o autismo adulto.
               </p>
             </div>
-            <section>
+
             <div className="hero-cta flex flex-col sm:flex-row gap-4">
-            <Button
-            onClick={() =>
-            window.open(
-                "https://wa.me/5511950184848?text=Olá!%20Quero%20ser%20coautor(a)%20do%20livro%20Adultos%20no%20Espectro%20Autista.",
-                "_blank"
-              )
-              }
-              size="lg"
-              className="bg-gradient-secondary text-secondary-foreground hover:opacity-90 transition-all duration-300 shadow-soft hover:shadow-glow text-lg px-8 py-6 rounded-full font-semibold"
+              <Button
+                onClick={() =>
+                  window.open(
+                    'https://wa.me/5511950184848?text=Olá!%20Quero%20ser%20coautor(a)%20do%20livro%20Adultos%20no%20Espectro%20Autista.',
+                    '_blank'
+                  )
+                }
+                size="lg"
+                className="bg-gradient-secondary text-secondary-foreground hover:opacity-90 transition-all duration-300 shadow-soft hover:shadow-glow text-lg px-8 py-6 rounded-full font-semibold"
               >
                 Quero ser coautor(a)
               </Button>
             </div>
-            </section>
           </div>
 
           {/* Book mockup */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-90" />
-              
               <img
                 ref={bookRef}
                 src={bookMockup}
