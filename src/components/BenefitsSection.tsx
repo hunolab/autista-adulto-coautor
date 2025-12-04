@@ -33,17 +33,17 @@ export const BenefitsSection = () => {
     {
       number: '01',
       title: 'Inscrição',
-      description: 'Preencha o formulário com seus dados e motivação para participar.',
+      description: 'Fala com uma de nossas assistentes',
     },
     {
       number: '02',
       title: 'Seleção',
-      description: 'Nossa equipe avaliará sua inscrição e entrará em contato.',
+      description: 'Escreva seu capítulo',
     },
     {
       number: '03',
       title: 'Orientação',
-      description: 'Receba as diretrizes e suporte para desenvolver seu capítulo.',
+      description: 'Nossa equipe editorial cuida da diagramação',
     },
     {
       number: '04',

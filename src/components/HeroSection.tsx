@@ -64,24 +64,22 @@ export const HeroSection = () => {
                 Sua história pode transformar vidas. Participe como coautor(a) desta obra única e ajude a construir uma nova narrativa sobre o autismo adulto.
               </p>
             </div>
-
+            <section>
             <div className="hero-cta flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={scrollToForm}
-                size="lg"
-                className="bg-gradient-secondary text-secondary-foreground hover:opacity-90 transition-all duration-300 shadow-soft hover:shadow-glow text-lg px-8 py-6 rounded-full font-semibold"
+            <Button
+            onClick={() =>
+            window.open(
+                "https://wa.me/5511950184848?text=Olá!%20Quero%20ser%20coautor(a)%20do%20livro%20Adultos%20no%20Espectro%20Autista.",
+                "_blank"
+              )
+              }
+              size="lg"
+              className="bg-gradient-secondary text-secondary-foreground hover:opacity-90 transition-all duration-300 shadow-soft hover:shadow-glow text-lg px-8 py-6 rounded-full font-semibold"
               >
                 Quero ser coautor(a)
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-primary/20 text-foreground hover:bg-primary/5 transition-all duration-300 text-lg px-8 py-6 rounded-full font-semibold"
-              >
-                Saiba mais
-              </Button>
             </div>
+            </section>
           </div>
 
           {/* Book mockup */}

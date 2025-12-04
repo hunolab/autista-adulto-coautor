@@ -14,11 +14,11 @@ export const AboutSection = () => {
             Sobre o Livro
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Uma obra que nasce da{' '}
-            <span className="text-gradient-primary">experiência real</span>
+            O que a obra{' '}
+            <span className="text-gradient-primary">pretende trazer</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            "Adultos no Espectro Autista" é mais do que um livro – é um movimento para dar voz às experiências únicas de pessoas autistas que navegam a vida adulta. Cada capítulo, escrito por coautores diversos, oferece perspectivas autênticas sobre desafios, conquistas e a riqueza da neurodiversidade.
+            O objetivo busca ampliar a compreensão sobre o autismo na vida adulta, reunindo experiências, pesquisas e práticas que abordam o diagnóstico precoce ou tardio, os desafios da inclusão, a saúde mental, as relações sociais e a construção da identidade.
           </p>
         </AnimatedSection>
 

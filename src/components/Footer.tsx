@@ -23,7 +23,7 @@ export const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/barbaralaureano.psi/"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
                 aria-label="Instagram"
               >
@@ -36,13 +36,7 @@ export const Footer = () => {
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
+              
             </div>
           </div>
 
@@ -65,11 +59,7 @@ export const Footer = () => {
                   Benefícios
                 </a>
               </li>
-              <li>
-                <a href="#inscricao" className="text-background/70 hover:text-background transition-colors">
-                  Inscreva-se
-                </a>
-              </li>
+             
             </ul>
           </div>
 
@@ -79,20 +69,20 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:contato@adultosnoespectro.com.br"
+                  href="mailto:comunicacao@literarebooks.com.br"
                   className="flex items-center gap-2 text-background/70 hover:text-background transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  contato@adultosnoespectro.com.br
+                  comunicacao@literarebooks.com.br
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+5500000000000"
+                  href="tel:+5511950184848"
                   className="flex items-center gap-2 text-background/70 hover:text-background transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  (00) 0000-0000
+                  (11) 95018-4848
                 </a>
               </li>
             </ul>

@@ -20,7 +20,6 @@ export const Header = () => {
     { label: 'Sobre', href: '#sobre' },
     { label: 'Coordenadora', href: '#coordenadora' },
     { label: 'Benefícios', href: '#beneficios' },
-    { label: 'Inscreva-se', href: '#inscricao' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -41,9 +40,15 @@ export const Header = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="text-lg font-bold text-foreground">
-            <span className="text-gradient-primary">AEA</span>
-          </a>
+          {/* Logo */}
+          <a href="#" className="flex items-center">
+            <img 
+              src="/src/assets/logo.png" 
+              alt="Logo AEA" 
+              className="h-10 w-auto"
+                                  />
+              </a>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
