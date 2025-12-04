@@ -54,7 +54,8 @@ export const CoordinatorSection = () => {
               </h2>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                 Bárbara Laureano é psicóloga com atuação desde 2017. Especializada em Psicoterapia Comportamental e Análise do Comportamento Aplicada ao Transtorno do Espectro Autista (TEA), com foco no diagnóstico tardio em mulheres. Atualmente mestranda, onde desenvolve pesquisa sobre camuflagem e identidade no contexto do TEA feminino.
+                 Bárbara Laureano é psicóloga, com pós-graduação em Psicoterapia Comportamental e em Análise do Comportamento Aplicada ao Autismo (ABA). Possui mestrado em Psicologia, no qual pesquisou as estratégias de camuflagem social utilizadas por mulheres autistas com diagnóstico tardio.
+Atua como psicóloga clínica no atendimento de adolescentes e adultos, com foco, nos últimos anos, na avaliação e intervenção voltadas a pessoas neurodivergentes. É supervisora clínica e professora de pós-graduação no Instituto Adultos no Espectro (AE). Idealizadora do programa InterAge, conduz treinamentos de habilidades sociais voltados para adolescentes e jovens adultos.
               </p>
 
               <div className="flex gap-4">
